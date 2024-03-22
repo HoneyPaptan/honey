@@ -1,0 +1,29 @@
+#sign {
+    stroke-dasharray: 446.82977294921875;
+    stroke-dashoffset: 446.82977294921875;
+    animation: signature 8s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate; /* Easing added */
+  }
+  
+  @keyframes signature {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .svg-container {
+    width: 196px; /* Set the width of the container */
+    height: 208px; /* Set the height of the container */
+  }
+  
+  .rotating-svg {
+    animation: rotate 10s linear infinite; /* Apply the rotation animation */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start the rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+  }
